@@ -58,6 +58,10 @@ void initializeGlobalISel(PassRegistry&);
 /// Initialize all passes linked into the CodeGen library.
 void initializeTarget(PassRegistry&);
 
+/// Initialize all passes related to AutoTune library
+void initializeOutputPrune(PassRegistry&);
+void initializeOutputPrunePass(PassRegistry&);
+
 void initializeAAEvalLegacyPassPass(PassRegistry&);
 void initializeAAResultsWrapperPassPass(PassRegistry&);
 void initializeADCELegacyPassPass(PassRegistry&);
